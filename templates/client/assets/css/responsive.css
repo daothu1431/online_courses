@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+}
+
+/* Tablet & moblie */
+@media screen and (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .container .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .action {
+        margin-left: auto;
+    }
+
+    /* B3 */
+    .header .toggle-menu {
+        width: 24px;
+    }
+
+    /* B4 */
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 30% 0 0;
+        padding: 60px;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer .menu-drawer__logo {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer .navbar__link {
+        display: block;
+        font-size: 20px;
+        padding: 14px 0;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .slideshow-media__image {
+        display: none;
+    }
+
+    .footer__inner {
+        margin-top: 15px;
+    }
+
+    .hero-inner__image {
+        display: none;
+    }
+
+    .hero-inner__image {
+        display: none;
+    }
+
+    .main-blog {
+        padding: 50px 0;
+    }
+
+    .main-blog img {
+        max-width: 100%;
+    }
+
+    .blog-pages-item__title {
+        line-height: 1.5;
+    }
+
+    .document__lesson img {
+        max-width: 100%;
+    }
+
+    .container {
+        overflow-x: hidden;
+    }
+
+    .course-inner__content {
+        height: 40%;
+    }
+
+    .course-inner__video {
+        object-fit: contain;
+    }
+
+    .course-inner {
+        padding: 0 0;
+    }
+
+    .course-buy__btn {
+        width: 100%;
+    }
+
+    .auth__intro {
+        display: none;
+    }
+
+    /* .learning__content {
+        height: 0;
+    } */
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .show-on-mobile {
+        display: none;
+    }
+
+    .logo__image {
+        display: none;
+    }
+
+    .action__singup {
+        display: none;
+    }
+
+    .course-inner__right-image {
+        margin-top: 20px;
+    }
+
+    .course__buy-desc {
+        display: none;
+    }
+
+    .order-heading__info,
+    .order-heading__pay {
+        margin-top: 35px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .container {
+        padding: 0 18px;
+    }
+
+    .top-bar .action {
+        display: none;
+    }
+
+    .top-bar {
+        padding: 12px 0;
+    }
+
+    .top-bar .logo__image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .space {
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        border-radius: 10px;
+    }
+
+    .footer__bottom {
+        display: block;
+    }
+    .footer__socials {
+        margin-top: 35px;
+    }
+
+    .learning-path__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .susgestion {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .susgestion__media {
+        display: none;
+    }
+
+    .learning-path__item {
+        width: 100%;
+    }
+
+    .hero-inner__info {
+        font-size: 4rem;
+    }
+    .blog-pages-item__media {
+        display: block;
+    }
+
+    .blog-pages-item-image {
+        margin-top: 15px;
+    }
+
+    #myButton {
+        display: none;
+    }
+
+    .slideshow-info__heading {
+        font-size: 2.8rem;
+    }
+
+    .slideshow-info__desc {
+        margin: 12px 0;
+    }
+
+    .footer__learning {
+        width: 100vw;
+    }
+
+    .header-learning__title {
+        display: none;
+    }
+
+    .document__lesson {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .form-search__header {
+        display: none;
+    }
+
+    .about__checklist {
+        margin-top: 20px;
+        display: block;
+    }
+
+    .about__check-item {
+        margin-top: 20px;
+    }
+
+    .course__buy-desc {
+        display: none;
+    }
+
+    .order-heading__info,
+    .order-heading__pay {
+        margin-top: 35px;
+    }
+
+    .title-checkout {
+        font-size: 22px;
+    }
+    .checkout-desc,
+    .checkout-noisy {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .checkout-info {
+        display: block;
+        padding: 20px 40px;
+    }
+
+    .checkout-info__item {
+        margin-top: 15px;
+    }
+
+    .checkout-main__info {
+        margin-top: 5px;
+    }
+
+    .checkout-summary__info {
+        display: block;
+    }
+
+    .checkout__info-left,
+    .checkout__info-right {
+        width: 100%;
+    }
+
+    .auth__content-inner {
+        padding: 40px 30px;
+    }
+}
